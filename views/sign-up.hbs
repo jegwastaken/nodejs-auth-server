@@ -1,0 +1,36 @@
+<h1>Sign Up</h1>
+<form data-action='{{subDir}}/sign-up' id='sign-up-form' novalidate>
+    <section>
+        <label for='new-email'>Email</label>
+        <input
+            id='new-email'
+            name='new-email'
+            type='email'
+            autocomplete='new-email'
+            autofocus
+        />
+    </section>
+    <section>
+        <label for='new-username'>Username</label>
+        <input
+            id='new-username'
+            name='new-username'
+            type='text'
+            autocomplete='new-username'
+        />
+    </section>
+    <section>
+        <label for='new-password'>Password</label>
+        <input
+            id='new-password'
+            name='new-password'
+            type='password'
+            autocomplete='new-password'
+        />
+    </section>
+    <button type='submit'>Sign Up</button>
+</form>
+<div>
+    <a class='button google' href='{{subDir}}/sign-up/federated/google'>Sign Up
+        with Google</a>
+</div>

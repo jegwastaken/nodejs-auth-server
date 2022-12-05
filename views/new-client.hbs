@@ -1,0 +1,32 @@
+<h1>Register Client</h1>
+<form data-action='{{subDir}}/new-client' id='new-client-form' novalidate>
+    <section>
+        <label for='new-clientname'>Client Name</label>
+        <input
+            id='new-clientname'
+            name='new-clientname'
+            type='text'
+            autocomplete='new-clientname'
+            autofocus
+        />
+    </section>
+    <section>
+        <label for='new-clientsecret'>Client Secret</label>
+        <input
+            id='new-clientsecret'
+            name='new-clientsecret'
+            type='password'
+            autocomplete='new-clientsecret'
+        />
+    </section>
+    <section>
+        <label for='new-redirecturi'>Redirect URI</label>
+        <input
+            id='new-redirecturi'
+            name='new-redirecturi'
+            type='text'
+            autocomplete='new-redirecturi'
+        />
+    </section>
+    <button type='submit'>Register Client</button>
+</form>

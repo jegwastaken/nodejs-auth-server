@@ -1,0 +1,25 @@
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link rel='stylesheet' href='{{subDir}}/assets/css/style.css' />
+        <title>{{appName}}</title>
+    </head>
+    <body>
+        <header>
+            <div class='branding'>{{appName}}</div>
+            <nav>
+                <ul>
+                    <li><a href='{{subDir}}/'>Home</a></li>
+                    <li><a href='{{subDir}}/login'>Login</a></li>
+                    <li><a href='{{subDir}}/sign-up'>Sign Up</a></li>
+                    <li><a href='{{subDir}}/new-client'>Register Client</a></li>
+                    <li><a href='{{subDir}}/logout'>Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        {{{body}}}
+        <script src='{{subDir}}/assets/js/main.js'></script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+#
+.yalc/
+node_modules/
+build/
+public/
+*.min.css

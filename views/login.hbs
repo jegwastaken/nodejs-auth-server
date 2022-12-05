@@ -1,0 +1,27 @@
+<h1>Login</h1>
+<form id='login-form' method='post' action='{{subDir}}/login' novalidate>
+    <section>
+        <label for='username'>Username</label>
+        <input
+            id='username'
+            name='username'
+            type='text'
+            autocomplete='username'
+            autofocus
+        />
+    </section>
+    <section>
+        <label for='password'>Password</label>
+        <input
+            id='password'
+            name='password'
+            type='password'
+            autocomplete='password'
+        />
+    </section>
+    <button type='submit'>Login</button>
+</form>
+<div>
+    <a class='button google' href='{{subDir}}/login/federated/google'>Login with
+        Google</a>
+</div>
