@@ -17,3 +17,4 @@ exports.clientSchema = new mongoose_1.Schema({
 });
 (0, utils_1.modifySchema)(exports.clientSchema);
 exports.default = (0, mongoose_1.model)('Client', exports.clientSchema);
+//# sourceMappingURL=client.js.map

@@ -88,3 +88,4 @@ passport_1.default.use(new passport_http_bearer_1.Strategy((accesstoken, done) =
         return done(null, false);
     return done(null, user, { scope: '*' });
 })));
+//# sourceMappingURL=passport.js.map

@@ -55,3 +55,4 @@ function verifyProofKey(challenge, method, verifier) {
         === challenge);
 }
 exports.verifyProofKey = verifyProofKey;
+//# sourceMappingURL=utils.js.map

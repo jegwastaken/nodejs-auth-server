@@ -72,3 +72,4 @@ if (newClientForm) {
     ((_f = document.getElementById('new-clientsecret')) !== null && _f !== void 0 ? _f : {}).value = '87FeY7Rjea!f@#';
     ((_g = document.getElementById('new-redirectURI')) !== null && _g !== void 0 ? _g : {}).value = 'http://localhost:3000';
 }
+//# sourceMappingURL=main.js.map

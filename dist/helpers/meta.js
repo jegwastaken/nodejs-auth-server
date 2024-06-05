@@ -11,3 +11,4 @@ exports.default = {
         ? path_1.default.resolve('/', process.env.SUB_DIR || '').replace(/\/+$/, '')
         : '',
 };
+//# sourceMappingURL=meta.js.map

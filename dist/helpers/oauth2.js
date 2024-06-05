@@ -162,3 +162,4 @@ exports.token = [
     server.token(),
     server.errorHandler(),
 ];
+//# sourceMappingURL=oauth2.js.map

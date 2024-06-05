@@ -37,7 +37,7 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use((0, cors_1.default)());
 app.use((0, morgan_1.default)(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
-app.use(`${meta_1.default.subDir}/assets/js`, express_1.default.static(publicJsDir));
+app.use(`${meta_1.default.subDir}/assets/js`, express_1.default.static(publicJsDir, { extensions: ['js'] }));
 app.use(`${meta_1.default.subDir}/assets/css`, express_1.default.static(`${viewsDir}/css`));
 app.use((0, express_session_1.default)({
     // Don't forget to set this env variable
@@ -89,3 +89,4 @@ process.on('SIGINT', closeApp);
 process.on('SIGTERM', closeApp);
 process.on('SIGQUIT', closeApp);
 process.on('SIGTSTP', closeApp);
+//# sourceMappingURL=index.js.map

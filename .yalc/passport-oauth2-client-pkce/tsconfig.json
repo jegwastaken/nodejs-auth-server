@@ -7,11 +7,9 @@
     "noImplicitAny": true,
     "strict": true,
     "baseUrl": ".",
-    "sourceMap": true,
     "outDir": "dist",
-    "typeRoots": ["./node_modules/@types", "./typings"],
     "skipLibCheck": true,
     "moduleResolution": "node"
   },
-  "include": ["src", "typings"]
+  "include": ["src"]
 }

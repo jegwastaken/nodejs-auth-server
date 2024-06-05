@@ -26,3 +26,4 @@ exports.accessTokenSchema.pre('save', function preSave(next) {
 });
 (0, utils_1.modifySchema)(exports.accessTokenSchema);
 exports.default = (0, mongoose_1.model)('AccessToken', exports.accessTokenSchema);
+//# sourceMappingURL=accessToken.js.map

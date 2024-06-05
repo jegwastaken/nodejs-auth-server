@@ -75,3 +75,4 @@ const validateEmail = (fields) => (0, express_validator_1.body)(fields).isEmail(
 exports.validateEmail = validateEmail;
 const validatePassword = (fields) => (0, express_validator_1.body)(fields).isLength({ min: 4, max: 30 });
 exports.validatePassword = validatePassword;
+//# sourceMappingURL=errors.js.map

@@ -27,3 +27,4 @@ exports.refreshTokenSchema.pre('save', function preSave(next) {
 });
 (0, utils_1.modifySchema)(exports.refreshTokenSchema);
 exports.default = (0, mongoose_1.model)('RefreshToken', exports.refreshTokenSchema);
+//# sourceMappingURL=refreshToken.js.map

@@ -15,3 +15,4 @@ exports.authCodeSchema = new mongoose_1.Schema({
 exports.authCodeSchema.index({ created: 1 }, { expireAfterSeconds: 60 });
 (0, utils_1.modifySchema)(exports.authCodeSchema);
 exports.default = (0, mongoose_1.model)('AuthCode', exports.authCodeSchema);
+//# sourceMappingURL=authCode.js.map

@@ -39,7 +39,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cors());
 app.use(morgan(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
-app.use(`${meta.subDir}/assets/js`, express.static(publicJsDir));
+app.use(
+    `${meta.subDir}/assets/js`,
+    express.static(publicJsDir, {extensions: ['js']}),
+);
 app.use(`${meta.subDir}/assets/css`, express.static(`${viewsDir}/css`));
 
 app.use(

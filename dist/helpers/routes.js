@@ -42,3 +42,4 @@ router.route('/oauth/token').post((0, express_rate_limit_1.default)({
     max: 60,
 }), oauth2_1.token);
 exports.default = router;
+//# sourceMappingURL=routes.js.map

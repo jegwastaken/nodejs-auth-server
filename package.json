@@ -10,8 +10,8 @@
   "private": true,
   "scripts": {
     "build": "rimraf dist && tsc -d",
-    "start": "node dist/index.js",
-    "dev": "concurrently \"tsc -w\" \"NODE_OPTIONS=--trace-warnings nodemon -q dist/index.js\"",
+    "start": "node .",
+    "dev": "tsc-watch --onSuccess \"yarn start\"",
     "eslint:panadero": "npx install-peerdeps --dev eslint-config-panadero",
     "prettier": "prettier --write .",
     "eslint": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
@@ -20,7 +20,6 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.28.0",
     "@typescript-eslint/parser": "^5.28.0",
-    "concurrently": "^7.3.0",
     "connect-livereload": "^0.6.1",
     "eslint": "^8.18.0",
     "eslint-config-panadero": "0.0.6",
@@ -29,9 +28,9 @@
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "livereload": "^0.9.3",
-    "nodemon": "^2.0.16",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
+    "tsc-watch": "^6.0.0",
     "typescript": "^4.7.4"
   },
   "dependencies": {
@@ -69,6 +68,7 @@
     "passport-http": "^0.3.0",
     "passport-http-bearer": "^1.0.1",
     "passport-local": "^1.0.0",
-    "passport-oauth2-client-password": "^0.1.2"
+    "passport-oauth2-client-password": "^0.1.2",
+    "passport-oauth2-client-pkce": "file:.yalc/passport-oauth2-client-pkce"
   }
 }

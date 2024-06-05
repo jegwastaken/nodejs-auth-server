@@ -1,0 +1,13 @@
+{
+  "name": "passport-oauth2-client-pkce",
+  "version": "0.0.1",
+  "main": "./dist",
+  "scripts": {
+    "dev": "tsc -w -d"
+  },
+  "dependencies": {
+    "@types/passport-strategy": "^0.2.35",
+    "passport-strategy": "1.x.x"
+  },
+  "yalcSig": "374cad6b64e49efb24fb79521e20d9ea"
+}
